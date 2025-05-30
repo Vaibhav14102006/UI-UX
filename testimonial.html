@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Testimonials</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background: #f5f7fa;
+      padding: 50px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .testimonial-container {
+      max-width: 800px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+    .testimonial {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 20px;
+    }
+    .testimonial:last-child {
+      border-bottom: none;
+    }
+    .testimonial img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 15px;
+      float: left;
+    }
+    .testimonial p {
+      font-size: 1rem;
+      color: #444;
+      margin: 0;
+    }
+    .testimonial h4 {
+      font-weight: 700;
+      margin: 5px 0 0;
+      color: #333;
+    }
+    .testimonial span {
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="testimonial-container" role="region" aria-label="User  testimonials">
+    <h2>User Testimonials</h2>
+    <div class="testimonial">
+      <img src="https://i.pravatar.cc/60?img=1" alt="User  1" />
+      <p>"This product has changed my life! Highly recommend it to everyone."</p>
+      <h4>Jane Doe</h4>
+      <span>CEO, Company A</span>
+    </div>
+    <div class="testimonial">
+      <img src="https://i.pravatar.cc/60?img=2" alt="User  2" />
+      <p>"Fantastic service and support. I couldn't be happier with my experience!"</p>
+      <h4>John Smith</h4>
+      <span>Designer, Company B</span>
+    </div>
+    <div class="testimonial">
+      <img src="https://i.pravatar.cc/60?img=3" alt="User  3" />
+      <p>"A game changer in the industry. I will definitely use it again!"</p>
+      <h4>Emily Johnson</h4>
+      <span>Developer, Company C</span>
+    </div>
+  </div>
+</body>
+</html>
