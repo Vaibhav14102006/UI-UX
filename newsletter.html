@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Newsletter Subscription</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: #f9fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .newsletter-container {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      text-align: center;
+      width: 400px;
+    }
+    .newsletter-container h2 {
+      margin-bottom: 20px;
+      font-weight: 700;
+      color: #333;
+    }
+    .input-group {
+      margin-bottom: 20px;
+    }
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      outline: none;
+      transition: border 0.3s ease;
+    }
+    input[type="email"]:focus {
+      border: 1px solid #4a90e2;
+    }
+    .btn-subscribe {
+      background: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 12px;
+      cursor: pointer;
+      font-weight: 700;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+    .btn-subscribe:hover {
+      background: #357ab8;
+    }
+    .message {
+      margin-top: 20px;
+      text-align: center;
+      color: #4a90e2;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="newsletter-container" role="form" aria-label="Newsletter subscription">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form onsubmit="handleSubscribe(event)">
+      <div class="input-group">
+        <input type="email" id="email" placeholder="Your Email" required />
+      </div>
+      <button type="submit" class="btn-subscribe">Subscribe</button>
+    </form>
+    <div class="message" id="responseMessage"></div>
+  </div>
+
+  <script>
+    function handleSubscribe(event) {
+      event.preventDefault();
+      const email = document.getElementById('email').value;
+      document.getElementById('responseMessage').innerText = `Thank you for subscribing, ${email}!`;
+      // Here you could add real subscription logic
+    }
+  </script>
+</body>
+</html>
