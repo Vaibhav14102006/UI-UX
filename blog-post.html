@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog Post</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: #f9fafc;
+      padding: 50px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .post-container {
+      max-width: 800px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+    .post-title {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    .post-meta {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 20px;
+    }
+    .post-content {
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 30px;
+    }
+    .comments-section {
+      margin-top: 40px;
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+    }
+    .comment {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 8px;
+      background: #f1f1f1;
+    }
+    .comment h4 {
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+    .comment p {
+      margin: 0;
+    }
+    .comment-form {
+      margin-top: 20px;
+    }
+    .comment-form input, .comment-form textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+    .comment-form button {
+      background: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background 0.3s ease;
+    }
+    .comment-form button:hover {
+      background: #357ab8;
+    }
+  </style>
+</head>
+<body>
+  <div class="post-container" role="article" aria-label="Blog post">
+    <h1 class="post-title">The Future of UI/UX Design</h1>
+    <div class="post-meta">By John Doe | January 1, 2024</div>
+    <div class="post-content">
+      <p>In the ever-evolving world of technology, UI/UX design plays a crucial role in shaping user experiences. As we move forward, the importance of intuitive design will only increase...</p>
+      <p>With advancements in AI and machine learning, designers will have new tools at their disposal to create more personalized experiences...</p>
+    </div>
+    <div class="comments-section">
+      <h3>Comments</h3>
+      <div class="comment">
+        <h4>Jane Smith</h4>
+        <p>Great insights! I completely agree with your points on personalization.</p>
+      </div>
+      <div class="comment">
+        <h4>Mark Johnson</h4>
+        <p>Looking forward to seeing how AI will change the design landscape!</p>
+      </div>
+      <div class="comment-form">
+        <h4>Leave a Comment</h4>
+        <input type="text" placeholder="Your Name" required />
+        <textarea placeholder="Your Comment" required></textarea>
+        <button onclick="alert('Comment submitted!')">Submit</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
