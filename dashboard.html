@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Modern Dashboard</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  body {
+    background: #f5f7fa;
+    color: #333;
+  }
+  header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  .welcome {
+    margin-bottom: 30px;
+  }
+  .cards {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .card {
+    background: white;
+    flex: 1 1 250px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.07);
+    transition: transform 0.3s ease;
+    cursor: default;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 40px rgba(74,144,226,0.3);
+  }
+  .card h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #4a90e2;
+  }
+  .card .value {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .chart-container {
+    height: 150px;
+    background: #e9f0fb;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4a90e2;
+    font-weight: 600;
+    font-size: 1.1rem;
+    user-select: none;
+  }
+  footer {
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+  <header>My Dashboard</header>
+  <div class="container" role="main">
+    <div class="welcome">
+      <h1>Welcome back, User!</h1>
+      <p>Here's a quick summary of your recent activity.</p>
+    </div>
+    <div class="cards">
+      <div class="card" aria-label="Total Sales">
+        <h3>Total Sales</h3>
+        <div class="value">$12,430</div>
+        <div class="chart-container">[Chart Placeholder]</div>
+      </div>
+      <div class="card" aria-label="New Customers">
+        <h3>New Customers</h3>
+        <div class="value">1,021</div>
+        <div class="chart-container">[Chart Placeholder]</div>
+      </div>
+      <div class="card" aria-label="Server Uptime">
+        <h3>Server Uptime</h3>
+        <div class="value">99.9%</div>
+        <div class="chart-container">[Chart Placeholder]</div>
+      </div>
+    </div>
+  </div>
+  <footer>© 2024 Your Company. All rights reserved.</footer>
+</body>
+</html>
